@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashna ❤️ Madhav</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 420px;
+            padding: 30px 22px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16.5px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 26px;
+            font-size: 17px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #yesBtn {
+            background-color: #e91e63;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #message {
+            display: none;
+            margin-top: 22px;
+            font-size: 18px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
+    <source src="humdard.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+    <h1>💖 Yashna, Will You Be My Valentine? 💖</h1>
+
+    <p>
+        Dear Yashna 🌸  
+        I checked all possibilities, timelines, and parallel universes…  
+        turns out there is only **one correct answer** 😌  
+        <br><br>
+        So go ahead, try pressing “No”…  
+        destiny has other plans 💫  
+        <br><br>
+        — With hope, smiles, and a very sincere heart,  
+        <b>Madhav</b> ❤️
+    </p>
+
+    <div class="buttons">
+        <button id="yesBtn" onclick="yesClicked()">Yes 💕</button>
+        <button id="noBtn" onclick="noClicked()">No 🙃</button>
+    </div>
+
+    <div id="message">
+        💍 It was always YES 💍 <br>
+        Yashna, you just made Madhav the happiest person alive 🥰❤️  
+        Happy Valentine’s Day 💞
+    </div>
+</div>
+
+<script>
+    let scale = 1;
+
+    function noClicked() {
+        scale += 0.08; // Yes button grows
+        document.getElementById("yesBtn").style.transform = `scale(${scale})`;
+    }
+
+    function yesClicked() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
